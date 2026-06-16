@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sorry Meri Samia G</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: pink;
+      font-family: Arial;
+      overflow: hidden;
+    }
+
+    .hearts::before {
+      content: "❤️ 💕 💖 💘 ❤️ 💕 💖 💘";
+      position: absolute;
+      font-size: 30px;
+      animation: float 6s linear infinite;
+      white-space: nowrap;
+    }
+
+    @keyframes float {
+      0% {transform: translateY(100vh);}
+      100% {transform: translateY(-100vh);}
+    }
+
+    .box {
+      text-align: center;
+      z-index: 2;
+    }
+
+    button {
+      padding: 12px 25px;
+      font-size: 18px;
+      border: none;
+      background: red;
+      color: white;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="hearts"></div>
+
+  <div class="box">
+    <h1>Sorry Meri Samia G ❤️</h1>
+    <button onclick="location.href='page2.html'">Press Janu 💕</button>
+  </div>
+</body>
+</html>
